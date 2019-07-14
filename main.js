@@ -12,11 +12,16 @@ Ex:  hello(null) => null
 
 */
 
-function hello() {
-  // WRITE YOUR CODE UNDER THIS LINE  
-
+function hello(name) {
+  // WRITE YOUR CODE UNDER THIS LINE 
+  if (typeof(null) == name){
+  console.log ("Null");
+  } 
+  else {
+return name;
 }
-
+}
+console.log("Hello" + 1);
 
 /* Q2:
 Create a function called calculateTax
@@ -32,11 +37,13 @@ Ex: calculateTax(100,0.15)
 => "You got 100 JD from sales, you should pay 15 JD for tax and you will have 85 JD as net sales."
 */
 
-function calculateTax() {
+function calculateTax(x,y) {
   // WRITE YOUR CODE UNDER THIS LINE 
-
+  var f = x*y ;
+  return x-f ;
+ 
 }
-
+console.log(calculateTax(500,0.16));
 
 /* Q3:
 Using while
@@ -52,11 +59,18 @@ Ex: repeatChar("a",2); => "a, A"
 Ex: repeatChar("C",5); => "C, c, C, c, C"
 */
 
-function repeatChar() {
+function repeatChar(str,num) {
   // WRITE YOUR CODE UNDER THIS LINE         
+while (num %2 == 0){
+	return str.toUpperCase();
+}
+	else {
+	return str + (str.toUpperCase() );
+}
 
 }
 
+console.log(repeatChar("a",2));
 
 /* Q4:
 Using recursion 
@@ -72,9 +86,10 @@ Ex: stringToCapital("Are you a student in coding ACADEMY by ORANGE ?")
 => "ARE YOU A STUDENT IN CODING ACADEMY BY ORANGE ?"
 */
 
-function stringToCapital() {
+function stringToCapital(str) {
   // WRITE YOUR CODE UNDER THIS LINE         
-
+ 
+        return str.toUpperCase();
 }
-
+console.log(stringToCapital("Are you a student in coding ACADEMY by ORANGE ?"));
 // Good luck :)
